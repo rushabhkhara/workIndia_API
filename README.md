@@ -8,8 +8,8 @@ http://localhost/workIndia/add_user.php [POST]<br>
 
 Request body: <br>
 { <br>
-    "agent_id" : 1", <br>  
-    "password" : "12134" <br>
+    "agent_id" : 1",<br>  
+    "password" : "12134"<br>
 }<br>
 Response:<br>
 {<br>
