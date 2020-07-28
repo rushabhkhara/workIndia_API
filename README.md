@@ -6,7 +6,7 @@ PHP REST APIs used, Postman for testing APIs, bcrypt used for encryption
 # Urls
 http://localhost/workIndia/add_user.php [POST]<br>
 
-Request body:
+Request body: 
 {
     "agent_id" : 1",   
     "password" : "12134"
@@ -24,7 +24,17 @@ Request body:
     "agent_id" : 1",   
     "password" : "12134"
 }
-
+Response: (success)
+{
+    "status":"success",
+    "agent_id":3,
+    "status_code" : 200
+}
+(failure)
+Response:{
+    "status" : "failure",
+    "status_code" : 401
+}
 http://localhost/workIndia/addTodo.php?agent=1 [POST] <br>
 Request body: 
 {
