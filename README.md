@@ -1,15 +1,32 @@
-## workIndia_API
+## WorkIndia_API
 
 # TechStack 
 PHP REST APIs used, Postman for testing APIs, bcrypt used for encryption
 
 # Urls
-http://localhost/workIndia/add_user.php
+http://localhost/workIndia/add_user.php [POST]<br>
 
-http://localhost/workIndia/login.php
-
-http://localhost/workIndia/addTodo.php?agent=1 
 Request body:
+{
+    "agent_id" : 1",   
+    "password" : "12134"
+}
+Response:
+{
+    "status":"account created",
+    "status_code" : 200
+}
+
+
+http://localhost/workIndia/login.php [POST]<br>
+Request body:
+{
+    "agent_id" : 1",   
+    "password" : "12134"
+}
+
+http://localhost/workIndia/addTodo.php?agent=1 [POST] <br>
+Request body: 
 {
     "agent_id" : 1",
     "title":"Hieiei",
@@ -23,7 +40,7 @@ Response:
   "status_code" : 200
 }
 
-http://localhost/workIndia/getTodo.php?agent=3
+http://localhost/workIndia/getTodo.php?agent=3 [GET]
 
 Response: A list of TODOs
 
