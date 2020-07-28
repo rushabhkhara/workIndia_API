@@ -6,52 +6,52 @@ PHP REST APIs used, Postman for testing APIs, bcrypt used for encryption
 # Urls
 http://localhost/workIndia/add_user.php [POST]<br>
 
-Request body: 
-{
-    "agent_id" : 1",   
-    "password" : "12134"
-}
-Response:
-{
-    "status":"account created",
-    "status_code" : 200
-}
+Request body: <br>
+{ <br>
+    "agent_id" : 1", <br>  
+    "password" : "12134" <br>
+}<br>
+Response:<br>
+{<br>
+    "status":"account created",<br>
+    "status_code" : 200<br>
+}<br>
 
 
 http://localhost/workIndia/login.php [POST]<br>
-Request body:
-{
-    "agent_id" : 1",   
-    "password" : "12134"
-}
-Response: (success)
-{
-    "status":"success",
-    "agent_id":3,
-    "status_code" : 200
-}
-(failure)
-Response:{
-    "status" : "failure",
-    "status_code" : 401
-}
+Request body:<br>
+{<br>
+    "agent_id" : 1",   <br>
+    "password" : "12134"<br>
+}<br>
+Response: (success)<br>
+{<br>
+    "status":"success", <br>
+    "agent_id":3,<br>
+    "status_code" : 200<br>
+}<br>
+(failure)<br>
+Response:{<br>
+    "status" : "failure",<br>
+    "status_code" : 401<br>
+}<br>
 
 http://localhost/workIndia/addTodo.php?agent=1 [POST] <br>
-Request body: 
-{
-    "agent_id" : 1",  (this was added as $_POST['agent'] wasn't working)
-    "title":"Hieiei",
-    "category": "sasdas",
-    "description": "asdasfsffas",
-    "due_date": "2020-06-10"
-}
-Response:
-{
-  "status":"success",
-  "status_code" : 200
-}
+Request body: <br>
+{<br>
+    "agent_id" : 1",  (this was added as $_POST['agent'] wasn't working) <br>
+    "title":"Hieiei",<br>
+    "category": "sasdas",<br>
+    "description": "asdasfsffas", <br>
+    "due_date": "2020-06-10"<br>
+}<br>
+Response:<br>
+{<br>
+  "status":"success", <br>
+  "status_code" : 200<br>
+}<br>
 
-http://localhost/workIndia/getTodo.php?agent=3 [GET]
+http://localhost/workIndia/getTodo.php?agent=3 [GET]<br>
 
-Response: A list of TODOs
+Response: A list of TODOs<br>
 
