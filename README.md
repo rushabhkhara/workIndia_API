@@ -39,7 +39,6 @@ Response:{<br>
 http://localhost/workIndia/addTodo.php?agent=1 [POST] <br>
 Request body: <br>
 {<br>
-    "agent_id" : 1",  (this was added as $_POST['agent'] wasn't working) <br>
     "title":"Hieiei",<br>
     "category": "sasdas",<br>
     "description": "asdasfsffas", <br>
